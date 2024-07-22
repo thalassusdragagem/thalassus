@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thalassus - Dragagem e Mergulho</title>
+    <link rel="icon" type="image/png" href="img/logo.fw.png">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <style>
+        /* Estilos para o lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 9999;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            
+        }
+        .lightbox img {
+            max-width: 95%;
+            max-height: 95%;
+            width: auto;
+            height: auto;
+            margin: auto;
+            display: block;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .close-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .video-box{
+            background-color: black;
+        }
+
+        .video-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .video-wrapper video {
+            max-width: 45%;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+        .container {
+            margin-top: 100px; /* Ajusta a margem superior para telas menores */
+        }
+        nav{
+            margin-top: 20px;
+        }
+        }
+
+        @media (max-width: 480px) {
+        .container{
+            margin-top: 100px; /* Ajusta a margem superior para telas muito pequenas */
+        }
+        nav{
+            margin-top: 20px;
+        }
+    }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>NOSSOS TRABALHOS E EQUIPAMENTOS</h1>
+            <p>De grandes empreendimentos a intervenções pontuais, cada trabalho realizado por nós é cuidadosamente planejado e executado com precisão, utilizando tecnologia de ponta e práticas ambientalmente responsáveis.</p>
+                Nossa frota de equipamentos está sempre bem mantida e pronta para atender às suas necessidades, permitindo que você execute suas operações com confiança e tranquilidade.</p>
+
+                <div class="container">
+                    <div class="galeria">
+                        <figure>
+                            <img src="img/Balsa Flutuante Para Apoio Transporte (2).jpg" alt="Imagem 1" class="lightbox-trigger">
+                            <figcaption>Balsa flutuante para apoio a transporte</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/Máquina de Treliça Sobre Flutuante para Dragagem E Transbordo de Soja e Grãos.jpg" alt="Imagem 2" class="lightbox-trigger">
+                            <figcaption>Máquina de treliça sobre flutuante para dragagem e transbordo de soja e grãos</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/Transbordo de Farelo de Balsa Encalhada - Canal de Feitoria RS.jpg" alt="Imagem 3" class="lightbox-trigger">
+                            <figcaption>Transbordo de Farelo de Balsa Encalhada no Canal de Feitoria-RS</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/draga hopper canal feitoria.jpg" alt="Imagem 4" class="lightbox-trigger">
+                            <figcaption>Draga Hopper - Canal de Feitoria"</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/dragagem_retiradaDePedrasDoCais-Porto de Rio Grande (2).jpg" alt="Imagem 5" class="lightbox-trigger">
+                            <figcaption>Dragagem para retirada de pedras do cais do Porto de Rio Grande</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/mergulho_corteSubmersoDragaNoPortoDeImbituba.jpg" alt="Imagem 6" class="lightbox-trigger">
+                            <figcaption>Mergulho de corte Submerso no Porto de Imbituba</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="lightbox" id="lightbox">
+                    <span class="close-button" onclick="fecharLightbox()">&times;</span>
+                    <img src="" alt="Imagem Ampliada" id="lightbox-img">
+                </div>
+                <h3><b>Nossas máquinas operando ⬇ </b></h3>
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <video controls>
+                            <source src="midia/dragagem.mp4" type="video/mp4">
+                            <track kind="subtitles" label="Português" src="legendas/dragagem.vtt" srclang="pt-br">
+                            Seu navegador não suporta o elemento de vídeo.
+                        </video>
+                        <video controls>
+                            <source src="midia/dragagem1.mp4" type="video/mp4">
+                            <track kind="subtitles" label="Português" src="legendas/dragagem.vtt" srclang="pt-br">
+                            Seu navegador não suporta o elemento de vídeo.
+                        </video>
+                        <video controls>
+                            <source src="midia/dragagem2.mp4" type="video/mp4">
+                            <track kind="subtitles" label="Português" src="legendas/dragagem.vtt" srclang="pt-br">
+                            Seu navegador não suporta o elemento de vídeo.
+                        </video>
+                        <video controls>
+                            <source src="midia/transbordo de materiais.mp4" type="video/mp4">
+                            <track kind="subtitles" label="Português" src="legendas/dragagem.vtt" srclang="pt-br">
+                            Seu navegador não suporta o elemento de vídeo.
+                        </video>
+                    </div>
+            </div>
+        </div>
+        <nav>
+            <!-- Logo no menu fixo -->
+            <a href="index.html">
+                <img class="logo-large" src="img/logo.fw.png" alt="logotipo">
+                <img class="logo-small oculto" src="img/logoh.fw.png" alt="logotipo">
+            </a>
+            <button class="menu-toggle"></button>
+            <ul class="menu">
+                <li><a href="index.html">Empresa</a></li>
+                <li class="submenu-item">
+                    <a class="ativo" class="submenu-trigger">Serviços <span class="submenu-arrow">▾</span></a>
+                    <ul class="submenu">
+                        <li><a href="dragagem.html">Dragagem</a></li>
+                        <li><a href="batimetria.html">Batimetria</a></li>
+                        <li><a href="locacao.html">Locação de Equipamentos</a></li>
+                        <li><a href="mergulho.html">Mergulho</a></li>
+                    </ul>
+                </li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br>
+    <footer>
+        <a href="https://contate.me/thalassus">
+            <img src="img/whats.fw.png" alt="whatsapp">
+        </a>
+        <a href="https://www.facebook.com/thalassusdragagem">
+            <img src="img/face.fw.png" alt="facebook">
+        </a>
+        <a href="https://www.instagram.com/thalassusdragagem">
+            <img src="img/insta.fw.png" alt="instagram">
+        </a>
+        <p><b>Avenida Portugal 209/01 - Cidade Nova - Rio Grande/RS - CEP: 96211-041<br>
+        Contato: (53) 9 9975-1111 e (53) 9 9112-5523<br>
+        e-mail: thalassusdragagem@thalassus.com.br<br>
+        Credenciais: Crea, Marinha CHM, FCEM, CSSM</b></p><br>
+        
+</footer>
+    <script>
+                // JavaScript para controlar o lightbox
+        document.addEventListener("DOMContentLoaded", function() {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxTriggers = document.querySelectorAll('.lightbox-trigger');
+
+            lightboxTriggers.forEach(function(trigger) {
+                trigger.addEventListener('click', function() {
+                    const imgSrc = this.getAttribute('src');
+                    lightbox.style.display = 'flex'; // Mostra o lightbox
+                    lightboxImg.setAttribute('src', imgSrc); // Define a imagem ampliada
+                });
+            });
+        });
+
+        function fecharLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none'; // Oculta o lightbox ao clicar no botão de fechar
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            const slides = document.querySelectorAll('.slide');
+            let index = 0;
+
+            var menu = document.querySelector('nav');
+            var menuToggle = document.querySelector('.menu-toggle');
+            var logoLarge = document.querySelector('.logo-large');
+            var logoSmall = document.querySelector('.logo-small');
+
+            menuToggle.addEventListener('click', function() {
+                menu.classList.toggle('ativo');
+                logoLarge.classList.toggle('oculto');
+                logoSmall.classList.toggle('oculto');
+            });
+
+            menu.classList.add('scroll');
+            logoLarge.classList.add('oculto');
+            logoSmall.classList.remove('oculto');
+        });
+
+        let slide1Index = 0;
+        const slides = document.querySelectorAll('.slide1');
+        const totalSlides = slides.length;
+
+        function showSlides() {
+            slides.forEach(slide => {
+                slide.style.display = 'none';
+            });
+
+            for (let i = slide1Index; i < slide1Index + 3; i++) {
+                if (i < totalSlides) {
+                    slides[i].style.display = 'block';
+                }
+            }
+        }
+
+        function moveSlides(n) {
+            slide1Index += n;
+            if (slide1Index < 0) {
+                slide1Index = totalSlides - 3;
+            }
+            if (slide1Index >= totalSlides - 2) {
+                slide1Index = 0;
+            }
+            showSlides();
+        }
+
+        showSlides();
+    </script>
+</body>
+</html>

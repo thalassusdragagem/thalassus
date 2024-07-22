@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thalassus - Dragagem e Mergulho</title>
+    <link rel="icon" type="image/png" href="img/logo.fw.png">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <style>
+        .imagem {
+            margin: 0 auto;
+            max-width: 60%;
+            height: auto;
+            margin-bottom: 50px;
+        }
+
+        .imagem img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            width: auto;
+            height: auto;
+        }
+        .whatsapp-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%; /* Garante que ocupa toda a altura disponível */
+        }
+        .whatsapp-link img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .video-box{
+            background-color: black;
+        }
+
+        .video-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .video-wrapper video {
+            max-width: 45%;
+            height: auto;
+        }
+        form {
+            max-width: 80%;
+            margin: 0 auto;
+            margin-top: 100px; /* Espaço acima do formulário */
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+        .container {
+            margin-top: 100px; /* Ajusta a margem superior para telas menores */
+        }
+        nav{
+            margin-top: 20px;
+        }
+        }
+
+        @media (max-width: 480px) {
+        .container{
+            margin-top: 100px; /* Ajusta a margem superior para telas muito pequenas */
+        }
+        nav{
+            margin-top: 20px;
+        }
+        
+    }
+    form {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 100px; /* Espaço acima do formulário */
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    form {
+        max-width: 90%; /* Reduz a largura máxima do formulário */
+        margin-top: 50px; /* Ajusta a margem superior para telas menores */
+        padding: 15px; /* Reduz o padding interno do formulário */
+    }
+
+    form fieldset {
+        padding: 10px; /* Reduz o padding do fieldset para telas menores */
+    }
+
+    form label {
+        margin-bottom: 8px; /* Espaçamento inferior menor para as labels */
+    }
+
+    form input[type=text],
+    form input[type=tel],
+    form input[type=email],
+    form textarea {
+        width: 85%; /* Garante que os inputs ocupem toda a largura disponível */
+        padding: 10px; /* Aumenta o padding dos inputs para telas menores */
+        margin-bottom: 10px; /* Espaçamento inferior entre os inputs */
+    }
+
+    form .botao {
+        width: 100%; /* Garante que o botão ocupe toda a largura disponível */
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        max-width: 95%; /* Reduz ainda mais a largura do formulário para telas muito pequenas */
+        margin-top: 30px; /* Ajusta a margem superior para telas muito pequenas */
+        padding: 10px; /* Reduz ainda mais o padding interno do formulário */
+    }
+
+    form fieldset {
+        padding: 8px; /* Reduz ainda mais o padding do fieldset */
+    }
+
+    form label {
+        margin-bottom: 6px; /* Espaçamento inferior menor para as labels */
+    }
+
+    form input[type=text],
+    form input[type=tel],
+    form input[type=email],
+    form textarea {
+        padding: 8px; /* Reduz ainda mais o padding dos inputs */
+    }
+
+    form .botao {
+        font-size: 16px; /* Ajusta o tamanho da fonte do botão para telas muito pequenas */
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <form>
+                <fieldset>
+                    <legend><b>CONTATO</b></legend>
+                    <label for="nome" class="form">Nome:* </label>
+                    <input type="text" id="nome" name="nome" required><br>
+                    
+                    <label for="sobrenome" class="form">Sobrenome:*</label>
+                    <input type="text" id="sobrenome" name="sobrenome" required><br>
+                    
+                    <label for="telefone" class="form">Telefone:*</label>
+                    <input type="tel" id="telefone" name="telefone" maxlength="11" required><br>
+                    
+                    <label for="whatsapp" class="form">Whatsapp:* </label>
+                    <input type="tel" id="whatsapp" name="whatsapp" maxlength="11" required><br>
+                    
+                    <label for="email" class="form">E-mail:*</label>
+                    <input type="email" id="email" name="email" required><br><br>
+    
+                    <label for="descricao" class="form">Mensagem:*</label><br>
+                    <textarea id="descricao" name="descricao" rows="10" cols="40" placeholder="Detalhe aqui as informações que deseja!" required></textarea>
+                    <p>*Campos Obrigatórios</p>
+                    
+                    <input class="botao" type="submit" value="ENVIAR">
+                </fieldset>
+            </form>
+            <br><br><br>
+        </div>
+        <nav>
+            <!-- Logo no menu fixo -->
+            <a href="index.html">
+                <img class="logo-large" src="img/logo.fw.png" alt="logotipo">
+                <img class="logo-small oculto" src="img/logoh.fw.png" alt="logotipo">
+            </a>
+            <button class="menu-toggle"></button>
+            <ul class="menu">
+                <li><a href="index.html">Empresa</a></li>
+                <li class="submenu-item">
+                    <a class="ativo" class="submenu-trigger">Serviços <span class="submenu-arrow">▾</span></a>
+                    <ul class="submenu">
+                        <li><a href="dragagem.html">Dragagem</a></li>
+                        <li><a href="batimetria.html">Batimetria</a></li>
+                        <li><a href="locacao.html">Locação de Equipamentos</a></li>
+                        <li><a href="mergulho.html">Mergulho</a></li>
+                    </ul>
+                </li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <a href="https://wa.me/5553991125523" class="whatsapp-link">
+            <img src="img/chame-no-zap.png" alt="Chame no WhatsApp">
+        </a>
+        
+    </header>
+    <br><br><br>
+       <footer>
+        <a href="https://contate.me/thalassus">
+            <img src="img/whats.fw.png" alt="whatsapp">
+        </a>
+        <a href="https://www.facebook.com/thalassusdragagem">
+            <img src="img/face.fw.png" alt="facebook">
+        </a>
+        <a href="https://www.instagram.com/thalassusdragagem">
+            <img src="img/insta.fw.png" alt="instagram">
+        </a>
+        <p><b>Avenida Portugal 209/01 - Cidade Nova - Rio Grande/RS - CEP: 96211-041<br>
+        Contato: (53) 9 9975-1111 e (53) 9 9112-5523<br>
+        e-mail: thalassusdragagem@thalassus.com.br<br>
+        Credenciais: Crea, Marinha CHM, FCEM, CSSM</b></p><br>
+        
+</footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const slides = document.querySelectorAll('.slide');
+            let index = 0;
+
+            var menu = document.querySelector('nav');
+            var menuToggle = document.querySelector('.menu-toggle');
+            var logoLarge = document.querySelector('.logo-large');
+            var logoSmall = document.querySelector('.logo-small');
+
+            menuToggle.addEventListener('click', function() {
+                menu.classList.toggle('ativo');
+                logoLarge.classList.toggle('oculto');
+                logoSmall.classList.toggle('oculto');
+            });
+
+            menu.classList.add('scroll');
+            logoLarge.classList.add('oculto');
+            logoSmall.classList.remove('oculto');
+        });
+
+        let slide1Index = 0;
+        const slides = document.querySelectorAll('.slide1');
+        const totalSlides = slides.length;
+
+        function showSlides() {
+            slides.forEach(slide => {
+                slide.style.display = 'none';
+            });
+
+            for (let i = slide1Index; i < slide1Index + 3; i++) {
+                if (i < totalSlides) {
+                    slides[i].style.display = 'block';
+                }
+            }
+        }
+
+        function moveSlides(n) {
+            slide1Index += n;
+            if (slide1Index < 0) {
+                slide1Index = totalSlides - 3;
+            }
+            if (slide1Index >= totalSlides - 2) {
+                slide1Index = 0;
+            }
+            showSlides();
+        }
+
+        showSlides();
+    </script>
+</body>
+</html>

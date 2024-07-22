@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thalassus - Dragagem e Mergulho</title>
+    <link rel="icon" type="image/png" href="img/logoo.fw.png">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <button class="menu-toggle"></button>
+        <div class="banner">
+            <img src="img/banner.jpg" class="slide active" alt="Imagem">
+            <img src="img/banner1.jpg" class="slide" alt="Imagem 1">
+            <img src="img/banner2.jpg" class="slide" alt="Imagem 2">
+            <img src="img/banner3.jpg" class="slide" alt="Imagem 3">
+        </div>
+        <nav>
+            <a href="index.html">
+                <img class="logo-large" src="img/logo.fw.png" alt="logotipo">
+                <img class="logo-small oculto" src="img/logoh.fw.png" alt="logotipo">
+            </a>
+            <ul class="menu">
+                <li><a href="index.html" class="ativo">Empresa</a></li>
+                <li class="submenu-item">
+                    <a class="ativo" class="submenu-trigger">Serviços <span class="submenu-arrow">▾</span></a>
+                    <ul class="submenu">
+                        <li><a href="dragagem.html">Dragagem</a></li>
+                        <li><a href="batimetria.html">Batimetria</a></li>
+                        <li><a href="locacao.html">Locação de Equipamentos</a></li>
+                        <li><a href="mergulho.html">Mergulho</a></li>
+                    </ul>
+                </li>
+                         
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Sobre a Thalassus</h1>
+        <p>A empresa é formada por uma equipe de profissionais que possuem vasta experiência nas áreas de dragagens, levantamentos hidrográficos, sinalização náutica, cartografia, geologia estrutural e geofísica que contribuem para projetos como: </p>
+        <ul>
+            <li>Dragagem e monitoramento de dragagem em portos, rios e hidrovias; </li>
+            <li>Investigação estrutural de obras civis em portos marítimos, lacustre e rios;</li>
+            <li>Implantação e manutenção da sinalização náutica;</li>
+            <li>Atualização de cartas náutica;</li>
+            <li>Serviços subaquáticos.</li>
+        </ul>
+        <br><br><br>
+        </div>
+        <div class="slideshow">
+            <div class="slideshow-container">
+                <div class="slide1"><img src="img/imagem1.jpg" alt="Imagem 1"></div>
+                <div class="slide1"><img src="img/imagem2.jpg" alt="Imagem 2"></div>
+                <div class="slide1"><img src="img/imagem3.jpg" alt="Imagem 3"></div>
+                <div class="slide1"><img src="img/imagem4.jpg" alt="Imagem 4"></div>
+                <div class="slide1"><img src="img/imagem5.jpg" alt="Imagem 5"></div>
+                <div class="slide1"><img src="img/imagem6.jpg" alt="Imagem 6"></div>
+                <div class="slide1"><img src="img/imagem7.jpg" alt="Imagem 7"></div>
+                <div class="slide1"><img src="img/imagem8.jpg" alt="Imagem 8"></div>
+                <div class="slide1"><img src="img/imagem9.jpg" alt="Imagem 9"></div>
+            </div>
+            <div class="arrow arrow-left" onclick="moveSlides(-3)">‹</div>
+            <div class="arrow arrow-right" onclick="moveSlides(3)">›</div>
+        </div>
+        <h3>Alguns dos serviços que prestamos:</h3>
+        <ul>
+            <li><b>BATIMETRIA</b>  -  Ecobatímetro Monofeixe e Multifeixe</li>
+            <li><b>SÍSMICA RASA</b>  -  Chirp, Boomer e Sub Botton Profiler</li>
+            <li><b>IMAGEAMENTO DE FUNDO</b>  -  Sonar de Varredura Lateral</li>
+            <li><b>TESTEMUNHO COM SONDAGEM ROTATIVA</b></li>
+            <li><b>COLETA DE AMOSTRAS INDEFORMADAS</b> – Amostrador Raymond ou Shelby 50,8 mm.</li>
+            <li><b>ENSAIOS DE SOLO</b> - Adensamento unidimensional, Piezocone (CPTU), Dissipação de Poro – Pressão, Vane Teste, Cisalhamento Direto</li>
+        </ul>   
+    </div>
+    <br><br><br>
+    <footer>
+        <a href="https://contate.me/thalassus">
+            <img src="img/whats.fw.png" alt="whatsapp">
+        </a>
+        <a href="https://www.facebook.com/thalassusdragagem">
+            <img src="img/face.fw.png" alt="facebook">
+        </a>
+        <a href="https://www.instagram.com/thalassusdragagem">
+            <img src="img/insta.fw.png" alt="instagram">
+        </a>
+        <p><b>Avenida Portugal 209/01 - Cidade Nova - Rio Grande/RS - CEP: 96211-041<br>
+        Contato: (53) 9 9975-1111 e (53) 9 9112-5523<br>
+        e-mail: thalassusdragagem@thalassus.com.br<br>
+        Credenciais: Crea, Marinha CHM, FCEM, CSSM</b></p><br>
+        
+</footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelectorAll('.slide');
+    let index = 0;
+
+    var menu = document.querySelector('nav');
+    var menuToggle = document.querySelector('.menu-toggle');
+    var logoLarge = document.querySelector('.logo-large');
+    var logoSmall = document.querySelector('.logo-small');
+
+    menuToggle.addEventListener('click', function() {
+        menu.classList.toggle('ativo');
+        logoLarge.classList.toggle('oculto');
+        logoSmall.classList.toggle('oculto');
+    });
+});
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelectorAll('.slide');
+    let index = 0;
+
+    function showSlide() {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[index].classList.add('active');
+        index = (index + 1) % slides.length;
+    }
+
+    setInterval(showSlide, 3000);
+
+    var menu = document.querySelector('nav');
+    var menuToggle = document.querySelector('.menu-toggle');
+    var logoLarge = document.querySelector('.logo-large');
+    var logoSmall = document.querySelector('.logo-small');
+
+    menuToggle.addEventListener('click', function() {
+        menu.classList.toggle('ativo');
+        logoLarge.classList.toggle('oculto');
+        logoSmall.classList.toggle('oculto');
+    });
+    
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+            menu.classList.add('scroll');
+            logoLarge.classList.add('oculto');
+            logoSmall.classList.remove('oculto');
+        } else {
+            menu.classList.remove('scroll');
+            logoLarge.classList.remove('oculto');
+            logoSmall.classList.add('oculto');
+        }
+    });
+});
+let slide1Index = 0;
+const slides = document.querySelectorAll('.slide1');
+const totalSlides = slides.length;
+
+function showSlides() {
+    slides.forEach(slide => {
+        slide.style.display = 'none';
+    });
+
+    for (let i = slide1Index; i < slide1Index + 4; i++) {
+        if (i < totalSlides) {
+            slides[i].style.display = 'block';
+        }
+    }
+}
+
+function moveSlides(n) {
+    slide1Index += n;
+    if (slide1Index < 0) {
+        slide1Index = totalSlides - 4;
+    }
+    if (slide1Index >= totalSlides - 3) {
+        slide1Index = 0;
+    }
+    showSlides();
+}
+
+showSlides();
+
+    setInterval(autoSlide, intervalTime);
+    // Função para abrir o modal com a imagem clicada
+function openModal(imgSrc, altText) {
+    var modal = document.getElementById('myModal');
+    var modalImg = document.getElementById('modalImg');
+
+    modal.style.display = 'block';
+    modalImg.src = imgSrc;
+    modalImg.alt = altText;
+}
+
+// Função para fechar o modal
+function closeModal() {
+    var modal = document.getElementById('myModal');
+    modal.style.display = 'none';
+}
+    </script>
+</body>
+</html>
