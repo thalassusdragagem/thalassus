@@ -6,7 +6,7 @@ body {
 }
 
 .banner {
-  width: clamp(800px, 100%, 1400px);
+  width: clamp(800px, 100%, 1600px);
   margin-top: -115px;
   border-radius: 0 0 20px 20px;
   position: relative;
